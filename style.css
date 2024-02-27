@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.game-cover {
+.game {
     background: url("https://res.cloudinary.com/dkd5jyhic/image/upload/v1601143553/Assets-Numeron/numeron-bg_mm5r8c.png") no-repeat;
     background-size: cover;
 }
@@ -16,9 +9,10 @@ body {
     color: white;
     height: 100vh;
     flex-direction: column;
+    text-align: center;
 }
 
-.flex-centered {
+.displedflex {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -31,12 +25,23 @@ body {
 
 #logo {
     width: 80%;
-    height: auto;
+    height: 60%;
+    margin-left: 9%;
+    /* margin: auto; */
 }
 
-.play {
+.playbutton {
     width: 180px;
     cursor: pointer;
+    margin-left: -40%;
+}
+.Gameoverbutton,.backbutton{
+    width: 300px;
+    padding: 20px 20px;
+    cursor: pointer;
+    background-color: #EE2689;
+    border-radius: 40px;
+    margin-top: -80px;
 }
 
 #numbers {
@@ -44,9 +49,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 10px ;
 }
 
-.number-holder {
+.number {
     background-color: white;
     color: black;
     width: 25vw;
@@ -55,12 +61,11 @@ body {
     height: 25vw;
     border: 2px solid #EE2689;
 }
-
-#instructions {
-    font-size: 6vw;
+#Guess{
+    font-size: 40px;
 }
 
-#numbers * {
+#numbers {
     font-size: 4vw;
 }
 
@@ -72,37 +77,41 @@ body {
 
 #timer {
     width: 10%;
+    height: 10%;
     position: absolute;
-    top: 5vh;
-    right: 5vh;
-    font-size: 6vw;
+    top: 10vh;
+    right: 10vh;
+    font-size: 15px;
     border: 1px solid white;
     border-radius: 3px;
 }
 
-#game-over-text {
-    width: 50%;
+.gameover {
+    width: 30%;
     max-width: 500px;
 }
 
-#score-box {
-    font-size: 6vw;
+.score {
+    font-size: 15px;
     border: 1px solid white;
-    padding: 2vw;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 50px;
 }
 
-.operators {
-    font-size: 3em;
-    border: 1px solid #ee2689;
-    padding: 30px;
-    text-align: center;
-    background-color: white;
-    color: black;
-    margin-right: 100px;
-    border-radius: 50%;
-}
 
 #buttons {
     display: flex;
     justify-content: space-evenly;
+}
+.playbutton{
+    width: 200px;
+    margin-left: 40%;
+    }
+.play{
+    width: 300px;
+    margin-top: 50px;
+    margin-left: -50px;
 }

@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="game flex-centered">
-    <div id="timer" class="flex-centered"></div>
-    <div id="instructions">Guess the relation</div>
+  <body class="game displedflex">
+    <div id="timer" class="displedflex">10 seconds</div>
+    <div id="Guess">Guess the relation</div>
     <div id="numbers">
-      <div id="number1" class="number-holder flex-centered">25</div>
+      <div  class="number displedflex">25</div>
       <div>?</div>
-      <div id="number2" class="number-holder flex-centered">32</div>
+      <div  class="number displedflex">32</div>
     </div>
-    <div id="buttons" class="flex-centered">
+    <div id="buttons" class="displedflex">
+      <a href="./index.html"><button class="backbutton">Back</button></a>
+
       <img
-        id="greater-than"
         src="./assets/greater-than-button_.png"
-        alt="greater-than-button"
+        alt=""
       />
       <img
-        id="equal-to"
         src="./assets/equal-to-button.png"
-        alt="equal-to-button"
+        alt=""
       />
       <img
-        id="lesser-than"
         src="./assets/lesser-than-button.png"
-        alt="less-than-button"
+        alt=""
       />
+      <a href="./gameover.html"><button class="Gameoverbutton">Game Over</button></a>
     </div>
     <script src="./game.js"></script>
     <script src="./score.js"></script>
