@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="game">
-    <img class="gameover" src="./assets/gameover-text.png" width="200px" alt="game-over" />
-    <div class="score">Score: 6</div>
-    <a href="./game.html">
-
-      <img
-        src="./assets/play-again-button.png" alt="" class="play"/>
-    </a>
+  <body class="game-cover flex-centered">
+    <img id="game-over-text" src="./assets/gameover-text.png" alt="game-over" />
+    <div id="score-box">Score: <span id="score-board"></span></div>
+    <img
+      id="play-again-button"
+      src="./assets/play-again-button.png"
+      alt="play-again"
+      class="play"
+    />
     <script src="./score.js"></script>
   </body>
 </html>
